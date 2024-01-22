@@ -34,7 +34,15 @@ public class Schedule extends Timestemped{
         this.titleSchedule = scheduleRequestDto.getTitleSchedule();
         this.bodySchedule = scheduleRequestDto.getBodySchedule();
         this.user = scheduleRequestDto.getUser();
+        this.pw = scheduleRequestDto.getPw();
 
+    }
+
+    public void update(ScheduleRequestDto scheduleRequestDto){
+        this.titleSchedule = scheduleRequestDto.getTitleSchedule();
+        this.bodySchedule = scheduleRequestDto.getBodySchedule();
+        this.user = scheduleRequestDto.getUser();
+        this.pw = scheduleRequestDto.getPw();
     }
 
 
