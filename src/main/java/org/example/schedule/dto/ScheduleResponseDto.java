@@ -14,6 +14,7 @@ public class ScheduleResponseDto {
     private LocalDateTime createdAt;
     private LocalDateTime modifiedAt;
 
+    //객체 생성시 가지고 있는 정보를 입력해줌
     public ScheduleResponseDto(Schedule schedule) {
         this.id = schedule.getId();
         this.titleSchedule = schedule.getTitleSchedule();
