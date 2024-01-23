@@ -35,7 +35,7 @@ public class ScheduleService {
     //선택한 일정만 조회
     public List<ScheduleResponseDto> getScheduleByUser(String username) {
         //username이 들어간 일정만 찾아서 리스트로 생성 후 Controller로 전달
-        return scheduleRepository.findAllByUserContainsOrderByCreatedAtDesc(username).stream()
+        return scheduleRepository.findAllByUserEqualsOrderByCreatedAtDesc(username).stream()
                 .map(ScheduleResponseDto::new)
                 .toList();
     }
